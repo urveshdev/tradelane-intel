@@ -1,0 +1,19 @@
+{
+  "name": "tradelane-intel",
+  "owner": {
+    "name": "Urvesh Devani"
+  },
+  "plugins": [
+    {
+      "name": "tradelane-intel",
+      "source": "./plugins/tradelane-intel",
+      "description": "Ocean container-shipping tradelane analyst — answer any tradelane/port/service/carrier question from live public data, with citations. No dataset bundled.",
+      "version": "1.0.0",
+      "author": { "name": "Urvesh Devani" },
+      "homepage": "https://github.com/urveshdev/tradelane-intel",
+      "repository": "https://github.com/urveshdev/tradelane-intel",
+      "license": "MIT",
+      "keywords": ["shipping", "logistics", "supply-chain", "freight", "ocean-freight", "tradelane"]
+    }
+  ]
+}

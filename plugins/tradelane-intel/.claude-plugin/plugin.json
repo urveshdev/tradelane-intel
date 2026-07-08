@@ -1,0 +1,9 @@
+{
+  "name": "tradelane-intel",
+  "description": "Ocean container-shipping tradelane analyst — answers any tradelane/port/service/carrier question from live public data, with citations. Ships no dataset: the analysis method + a public-source map. Portable to ChatGPT/Gemini via a copy-paste prompt.",
+  "version": "1.0.0",
+  "author": { "name": "Urvesh Devani" },
+  "homepage": "https://github.com/urveshdev/tradelane-intel",
+  "license": "MIT",
+  "keywords": ["shipping", "logistics", "supply-chain", "freight", "ocean-freight", "tradelane"]
+}
