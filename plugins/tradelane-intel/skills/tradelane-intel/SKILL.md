@@ -35,6 +35,33 @@ your normal web tools; this skill tells you where to look, how to reason, and ho
    from it, and flag uncertainty. A senior analyst is willing to conclude the boring truth.
 5. **Read geography precisely.** "Asia" is meaningless — say East Asia (China/Korea/Japan/Taiwan),
    SE Asia (Vietnam/Thailand/Singapore/Malaysia), or South Asia (India/Sri Lanka/Bangladesh).
+6. **Respect time.** Date every figure, set an "as of" date for the answer, and never combine numbers
+   from different periods into one comparison as if they were one snapshot. A stale event (a service
+   launched a year ago, a 2022 structural share) is *context*, not current news, and is not comparable
+   to a this-quarter figure without saying so. See `references/method.md` §7.
+7. **Every finding must matter to the reader** — it must change a cost, a risk, or a decision *they*
+   actually face. Before a finding earns a place, name whose problem it is (exporter / importer /
+   forwarder / carrier) and confirm it moves a metric *that reader actually pays or feels* — an exporter
+   feels the **outbound** leg and their equipment/space, not the inbound headhaul. If the reader's own
+   metric hasn't moved, or knowing it wouldn't change what they do, it is **not a finding — cut it.**
+   Don't pad to a target count; and if verification kills a finding's premise, **cut it, don't reframe
+   it** to survive. See the materiality gate in `references/insight-playbook.md`.
+8. **Verify hardest what's easiest to get wrong.** A **negative or universal** claim ("no direct
+   service", "only via X", "the last Y") dies to one counterexample — check it against current primary
+   sources and **name the exact scope** (cargo class, destination, service). Never lean on a source
+   flagged **stale/low-confidence/single** — re-verify or cut. **Name specifics, not vague claims**
+   ("direct calls" → to where, on what service?). Distinguish **service/cargo classes** (container-liner
+   ≠ specialised reefer ≠ charter ≠ bulk). See `references/method.md` §8.
+9. **People, quotes, and services move in time.** Quotes are **verbatim or nothing** — never splice
+   fragments into one quotation; quote each fragment separately. Verify a quoted executive is **current
+   in role as of your as-of date** (CEOs change; a stale attribution is a factual error a tagged company
+   will catch) — else date it: "then-CEO X said in May 2024". Match quote recency to the piece's window.
+   A carrier "leaving" a trade is usually a **restructuring, not an exit** — name the service, what
+   changed, and the fallback routing ("removed one region's calls from a loop; that region now served
+   via transshipment at a hub"). Retiring your own tonnage and taking slots on a rival's *existing* ships
+   removes net capacity — it isn't new capacity. Before "only N carriers/loops", **enumerate the full
+   current service map** for that lane and cargo class. And **confirm the year of every source** — search
+   surfaces prior-year changes as current. See `references/method.md` §9.
 
 ## Workflow
 
@@ -74,7 +101,9 @@ direction and demand/volume context from the indices and reports in `references/
 **Step 4 — Analyze.** Apply the relevant frame from `references/method.md`:
 port-rotation reading · transshipment-vs-gateway test · **carrier concentration (HHI / top-3 share)**
 · **rate-vs-demand divergence** (the supply-discipline test) · service-churn as a capacity signal ·
-alliance/consortium structure. For a quick concentration read, run `scripts/concentration.py`.
+alliance/consortium structure · **temporal integrity & comparability** (date every figure, don't mix
+periods — §7) · **capacity-access stratification** (shipper side: who owns tonnage / commits volume /
+buys per sailing — §10). For a quick concentration read, run `scripts/concentration.py`.
 
 **Step 5 — Answer.** Lead with the finding, support it with the data, give a specific
 recommendation if the user is a shipper/planner, note the honest caveat, and list sources. Keep it
@@ -127,6 +156,39 @@ Pick ONE finding — but evidence it *fully*. Half-mapped data reads as guesswor
 - A rate/demand claim → the **actual direction/number with its date**, both the rate line and the
   demand line.
 Depth on one finding, completely proven and fully cited, beats breadth across many half-proven ones.
+
+### Before you publish — the pre-publish checks
+
+**Materiality (does each finding earn its place?)** — see `references/insight-playbook.md`:
+- For each finding, name the **reader** and confirm it moves a metric **they** pay or feel (right side of
+  the deal: exporter → outbound; importer → inbound). If it's the wrong side or the reader's own metric is
+  flat, **cut the finding.**
+- Did you **pad to a round number**? Drop any passenger — count follows the bar.
+- Did verification **kill a premise**? Cut that finding; don't reframe it into a weaker point to survive.
+
+**Accuracy (§8):** for each claim — is it a **negative/universal** ("no…", "only…", "the last…")? If so,
+did you look for the counterexample and name the exact scope (cargo class, destination, service)? Is any
+claim resting on a **stale/flagged/single** source? Are the specifics **named**, not vague?
+
+**Temporal (§7):**
+- Does the brief state an **as-of date**, and does every figure carry its **own** reference period?
+- Is anything called **"new"** that actually started before your window? Re-label it "in place since [date]".
+- Does any chart, ratio, or side-by-side comparison **mix periods** as if they were one snapshot? Either
+  make it a dated series with labelled periods, or split it.
+- Are you comparing **like-for-like** (same period, unit, basis)? Flag any structural/older figure sitting
+  next to a current one.
+
+**People & services (§9):**
+- Every quote **verbatim** (no spliced fragments), speaker **verified current in role** as of the as-of
+  date — or the attribution is dated ("then-CEO…, May 2024").
+- Every "carrier exited / only N options" claim names the **specific service change** and survives a
+  **full enumeration** of the lane's current direct services (right cargo class, right lane scope).
+- Every superlative is **attributed** to its source ("the port describes it as the region's largest…")
+  unless independently enumerated.
+- **Hostile-reader pass** for public pieces naming companies: assume each named company's comms team
+  reads it — attack universals, superlatives, causal joints, period joins, and internal consistency
+  (e.g. don't blame a cargo type for a container-terminal problem while praising that shipper's
+  *non-container* operation).
 
 ## What this skill deliberately does NOT do
 

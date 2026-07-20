@@ -4,6 +4,29 @@ Use these when the question touches rates, capacity, or demand. Fetch the URL di
 back to WebSearch if a page has moved. All are third-party (not carrier-published) — cite them as
 market commentary, distinct from carrier-published network facts.
 
+## Match the rate to the direction you're analysing (inbound ≠ outbound)
+
+A lane has two legs with different economics. An **exporter's** freight is the **outbound/backhaul** leg;
+an **importer's** is the **inbound/headhaul** leg. Most public indices (SCFI headline legs, Drewry
+headline lanes) price the **loaded headhaul** — often the *import* direction for a peripheral, end-of-
+line market. So when analysing an **export** question, do **not** present a headhaul/import
+index as "the exporter's rate": name it the **inbound headhaul** and use it as a labelled **proxy/driver**
+(the export leg rides the same loop; thin backhaul + headhaul discipline firm the outbound rate). If a
+clean outbound index doesn't exist, say so, and look for direct outbound evidence (e.g. forwarder/log-
+freight reports of *outbound* rate moves) rather than substituting the inbound number silently.
+
+## Read the direction, not a stale level
+
+- For a *current* read, use **timestamped index/weekly assessments** (SCFI, Drewry, Freightos weekly),
+  not forwarder marketing pages — those quote a "current level" that can be weeks stale, and a level from
+  three weeks ago is not this week's *direction*.
+- **Confirm the year** of any figure you pull; search routinely returns a prior-year rate labelled as
+  current. A composite index from a past year is not this week's number.
+- **Live desk quotes lead the published index by days.** If a shipper cites what their booking desk is
+  quoting now, treat that as *ahead of* the index, not contradicting it — indices lag the deal.
+- Separate the **level** (elevated vs a year ago) from the **direction** (rising/flat/falling this week);
+  a market can be high on the level and already rolling over on the direction. State which you mean.
+
 ## Spot-rate direction (which way, how fast)
 
 - **Drewry — World Container Index (WCI)** — weekly, 8 major lanes; the standard reference (free

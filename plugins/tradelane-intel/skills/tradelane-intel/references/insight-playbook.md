@@ -56,6 +56,11 @@ and dig for the second-order point. Let the data kill a tempting narrative.
   typical peak window and whether this year diverges.
 - **Contract vs spot — lock now or wait?** → spot-vs-long-term spread (Xeneta/Drewry) + the capacity
   read; frame the risk, don't give financial advice.
+- **Who's insulated when capacity tightens / why do equal-rate shippers get unequal outcomes?** →
+  capacity-access stratification (§10): rank cargo owners by *how* they secure capacity (own/charter
+  tonnage → volume-commitment partnerships → per-sailing), note the physical class of each flow
+  (chartered conventional reefer bypasses container terminals and plugs), and state whether the lane
+  is thin enough that committed volume decides *existence* of capacity, not just price.
 
 **Change & structure**
 - **Is X a real shift, or hype?** → new-vs-confirming test. Require *current* dated evidence (a closed
@@ -103,6 +108,37 @@ Lead with it, proven.
   finding must rest on a source you actually opened; if you couldn't open it, it can't be the headline.
 - Burying the genuinely structural lever (e.g. NZ reefer-capacity seasonality, or the lane's
   concentration) in a closing caveat while headlining a minor dated item.
+
+## Materiality gate — every finding must earn its place (run before you publish)
+
+A finding that doesn't change what the reader does is filler, however true or well-cited. "Matters to the
+reader" means it changes a **cost, a risk, or a decision they actually face** — not just a true fact about
+the market. Before any finding survives, it must pass ALL FOUR:
+1. **Whose problem is it?** Name the reader (exporter / importer / forwarder / carrier) and confirm it
+   actually affects *them*. Match the data to their side of the deal: an **exporter** feels the
+   **outbound/backhaul** leg and their equipment/space; an **importer** feels the **inbound/headhaul**.
+   Never hand a reader the *other side's* number as if it were theirs.
+2. **Did the reader's OWN metric actually move?** Verify the change in the series they pay or feel — not
+   an adjacent proxy. "Rates are rising" must show up in the reader's *own* rate. If that series is flat
+   (or unindexed and you can't show a move), the trend isn't theirs and the finding is dead.
+3. **Would it change a decision?** If knowing it changes nothing the reader would do, it's *context*, not
+   a finding.
+4. **Is it non-obvious?** If the trade already knows it, dig for the second-order point.
+
+Then:
+- **Count follows the bar, not a target.** Ship only the findings that pass. Five that matter beat six
+  with a passenger — never pad to a round number.
+- **If verification kills the premise, CUT the finding — don't downgrade it.** When the data refutes what
+  you were going to say, drop it; don't reframe a dead insight into a weaker "well, actually…" to keep the
+  slot. A myth-buster survives *only* if the reader genuinely held the myth **and** correcting it changes
+  their action.
+- **No reader's-own index? Say so, and don't substitute.** If the reader's metric isn't publicly tracked,
+  state that plainly and use the best *direct* evidence for their side (even qualitative) — never quote
+  the adjacent or opposite-leg index as if it were theirs.
+
+*This is the exact failure to avoid: a "freight is rising" finding written for **exporters** off an
+**import-leg** index, while the exporters' own outbound rate was flat-to-easing. True numbers, wrong
+reader — useless, and it should have been cut, not reframed.*
 
 ## The bar (every answer)
 
